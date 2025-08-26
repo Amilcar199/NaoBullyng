@@ -1,0 +1,247 @@
+/* ====== GERAL ====== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap');
+
+:root {
+  --azul-claro: #A8D0E6;
+  --rosa-suave: #FFB6B9;
+  --branco: #FFF;
+  --cinza-leve: #F5F5F5;
+  --azul-escuro: #24305E;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: var(--cinza-leve);
+  color: var(--azul-escuro);
+  min-height: 100vh;
+}
+
+/* ====== NAVBAR ====== */
+header {
+  background: var(--branco);
+  box-shadow: 0 2px 8px rgba(36,48,94,0.07);
+  top: 0;
+  z-index: 10;
+}
+nav {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  height: 64px;
+}
+nav .logo {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--azul-escuro);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: var(--azul-escuro);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  position: relative;
+}
+nav ul li a:hover, nav ul li a.active {
+  background: var(--azul-claro);
+  color: var(--azul-escuro);
+  box-shadow: 0 2px 8px #A8D0E6;
+  outline: 1.5px solid var(--azul-claro);
+}
+
+/* ====== HOME (index.html) ====== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--azul-claro);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(36,48,94,0.07);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+.hero-text {
+  flex: 1 1 320px;
+}
+.hero h1 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  color: var(--azul-escuro);
+}
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.hero .cta-btn {
+  background: var(--rosa-suave);
+  color: var(--azul-escuro);
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.2rem;
+  font-size: 1.2rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(255,182,185,0.15);
+}
+.hero .cta-btn:hover {
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
+.hero-img {
+  flex: 1 1 220px;
+  text-align: center;
+}
+.hero-img img {
+  max-width: 260px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ====== SEÇÕES GERAIS (cards, títulos, listas) ====== */
+.section {
+  margin-bottom: 2.5rem;
+}
+.section-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: var(--azul-escuro);
+}
+.card {
+  background: var(--branco);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(168,208,230,0.12);
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.card-destaque {
+  background: var(--rosa-suave);
+  color: var(--azul-escuro);
+  font-weight: bold;
+  box-shadow: 0 2px 12px #FFB6B9;
+}
+.card-apoio {
+  background: var(--azul-claro);
+  color: var(--azul-escuro);
+  font-weight: bold;
+  box-shadow: 0 2px 12px #A8D0E6;
+}
+.card ul {
+  margin: 0.7rem 0 0 1.2rem;
+  padding: 0;
+}
+.card li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.img-ilustrativa {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  margin: 1.5rem auto 0 auto;
+}
+
+/* ====== O QUE É BULLYING (oqueebullying.html) ====== */
+/* Usa .section, .card e .img-ilustrativa para layout do conteúdo e ilustração */
+
+/* ====== COMO IDENTIFICAR (comoidentificar.html) ====== */
+/* Usa .section, .card e .img-ilustrativa para layout do conteúdo e ilustração */
+
+/* ====== O QUE FAZER (oquefazer.html) ====== */
+/* Usa .section, .card e .img-ilustrativa para layout do conteúdo e ilustração */
+
+/* ====== QUEM PROCURAR (quemprocurar.html) ====== */
+/* Usa .section, .card e .img-ilustrativa para layout do conteúdo e ilustração */
+
+/* ====== DEPOIMENTOS (depoimentos.html) ====== */
+/* Usa .section, .card, .card-destaque, .card-apoio e .img-ilustrativa */
+
+/* ====== CONTATO (contato.html) ====== */
+form {
+  background: var(--branco);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #A8D0E6;
+  padding: 18px 14px;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+form label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+form input, form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #A8D0E6;
+  padding: 8px 12px;
+}
+form button {
+  background: var(--rosa-suave);
+  color: var(--azul-escuro);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+form button:hover {
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
+.info-contato {
+  margin-top: 18px;
+  font-size: 1em;
+  background: var(--azul-claro);
+  color: var(--azul-escuro);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 8px #A8D0E6;
+  text-align: center;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+  background: var(--azul-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 1.2rem 0 0.5rem 0;
+  margin-top: 2rem;
+  border-radius: 0 0 16px 16px;
+  font-size: 1rem;
+}
+
+/* ====== REMOVIDA RESPONSIVIDADE ====== */
+/* Nenhuma media query ou flex-wrap */ 
